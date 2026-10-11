@@ -1,0 +1,8 @@
+SYNTHETIC TEST DOCUMENT
+
+This is a fictional warning letter for software testing.
+
+The organization failed to maintain a documented
+record review procedure.
+
+This text is not an actual FDA finding.
