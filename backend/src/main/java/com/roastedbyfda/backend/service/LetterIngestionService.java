@@ -50,7 +50,8 @@ public class LetterIngestionService {
                         sourceUrl,
                         input.companyName(),
                         input.letterDate(),
-                        input.issuingOffice()
+                        input.issuingOffice(),
+                        input.subject()
                 )
         );
 

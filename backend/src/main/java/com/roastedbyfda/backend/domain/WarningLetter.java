@@ -40,18 +40,23 @@ public class WarningLetter {
             insertable = false, updatable = false)
     private OffsetDateTime updatedAt;
 
+    @Column(name = "subject", columnDefinition = "TEXT")
+    private String subject;
+
     protected WarningLetter() {}
 
     public WarningLetter(
             String sourceUrl,
             String companyName,
             LocalDate letterDate,
-            String issuingOffice) {
+            String issuingOffice,
+            String subject) {
 
         this.sourceUrl = sourceUrl;
         this.companyName = companyName;
         this.letterDate = letterDate;
         this.issuingOffice = issuingOffice;
+        this.subject = subject;
     }
 
     public Long getId() {
@@ -72,5 +77,13 @@ public class WarningLetter {
 
     public String getSourceUrl() {
         return sourceUrl;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 }

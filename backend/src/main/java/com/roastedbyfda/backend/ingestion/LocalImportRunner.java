@@ -41,7 +41,8 @@ public class LocalImportRunner implements CommandLineRunner {
                 "Synthetic Test Company",
                 LocalDate.of(2026, 1, 1),
                 "Synthetic Testing Office",
-                text
+                text,
+                "Synthetic Test Subject"
         );
 
         ImportResult result = service.ingest(input);

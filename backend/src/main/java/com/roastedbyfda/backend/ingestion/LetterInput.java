@@ -7,5 +7,7 @@ public record LetterInput(
         String companyName,
         LocalDate letterDate,
         String issuingOffice,
-        String originalText
+        String originalText,
+        String subject
+
 ) {}
